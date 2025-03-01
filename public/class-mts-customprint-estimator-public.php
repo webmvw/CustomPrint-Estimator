@@ -128,7 +128,7 @@ class Mts_Customprint_Estimator_Public {
 		if ( isset( $_POST['mts_banner_width_ft'] ) && isset( $_POST['mts_banner_width_in'] ) && isset( $_POST['mts_banner_height_ft'] ) && isset( $_POST['mts_banner_height_in'] ) && isset( $_POST['mts_customprint_estimator_of_side'] ) && isset( $_POST['mts_customprint_estimator_hem'] ) && isset( $_POST['mts_customprint_estimator_grommet'] ) ) {
 
 	   
-	        $width_fit = isset( $_POST['mts_banner_width_ft'] ) ? floatval( sanitize_text_field( wp_unslash( $_POST['mts_banner_width_ft'] ) ) ) : '';
+	        $width_ft = isset( $_POST['mts_banner_width_ft'] ) ? floatval( sanitize_text_field( wp_unslash( $_POST['mts_banner_width_ft'] ) ) ) : '';
 	        $width_in = isset( $_POST['mts_banner_width_in'] ) ? floatval( sanitize_text_field( wp_unslash( $_POST['mts_banner_width_in'] ) ) ) : '';
 	        $height_ft = isset( $_POST['mts_banner_height_ft'] ) ? floatval( sanitize_text_field( wp_unslash( $_POST['mts_banner_height_ft'] ) ) ) : '';
 	        $height_in = isset( $_POST['mts_banner_height_in'] ) ? floatval( sanitize_text_field( wp_unslash( $_POST['mts_banner_height_in'] ) ) ) : '';
